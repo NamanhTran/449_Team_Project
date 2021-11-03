@@ -1,0 +1,49 @@
+body {
+    background-color: #8CAF9A;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rakkas', cursive;
+}
+
+.input-container{
+    display: flex;
+    color: #C4C4C4;
+    height: 38px;
+    width: 500px;
+}
+
+.btn-container{
+    display: flex;
+    color: #407B58;
+    background: #634B41;
+}
+
+#email{
+    order: 1;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+}
+
+#password{
+    order: 2;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+}
+
+#login-btn{
+    background-color: #407B58;
+    font-family: 'Rakkas', cursive;
+    border-radius: 10px;
+}
+
+#signup-btn{
+    background-color: #407B58;
+    font-family: 'Rakkas', cursive;
+    border-radius: 10px;
+}
