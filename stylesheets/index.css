@@ -36,11 +36,12 @@ body {
 
 #searchBar{
     flex: 1;
-    margin: 55px;
+    margin-top: 55px;
+    margin-right: 55px;
     justify-content: end;
     background-color: #6C756D;
     height: 38px;
-    width: 150px;
+    width: 175px;
     order: 4;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -50,5 +51,4 @@ body {
     justify-content: center;
     color: #544848;
     font-family: 'Rakkas', cursive;
-
 }
