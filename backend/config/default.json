@@ -1,0 +1,6 @@
+{
+    "DB_URL": "mongodb://mongodb/rottenPotatoes",
+    "SESSION_SECRET": "temporary secret",
+    "THEMOVIEDB_API_KEY": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMDI0ZjZjNDM5MDdjNjA5MTFkNDgwYmI2OTE0ZjA4NiIsInN1YiI6IjVmYzhiMjE4NjZhN2MzMDAzZjQ1MGI5YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OGB8OC2POTdW0DHfn_BQGI0L5ehxWu8d1bdXV46rm7s",
+    "SALT_ROUNDS": 12
+}
