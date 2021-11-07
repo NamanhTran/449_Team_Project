@@ -37,18 +37,21 @@
 
 #trending-list {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-top: 2%;
 }
 
 #whats-new-list {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-top: 2%;
 }
 
 #top-rated-list {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-top: 2%;
 }
