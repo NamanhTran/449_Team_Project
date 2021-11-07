@@ -1,0 +1,59 @@
+.category {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-box {
+    display: flex;
+    font-family: 'Rakkas', cursive;
+    font-size: 175%;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 20%;
+    height: 10%;
+    border-radius: 25px;
+    background: #729580;
+    padding: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.movie-list {
+    display: flex;
+    padding-top: 66px;
+    border-radius: 25px;
+    font-family: 'Rakkas', cursive;
+    justify-content: space-around;
+    padding-left: 7%;
+}
+
+.movie-poster {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    height: 100%;
+    width: 70%;
+}
+
+#trending-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#whats-new-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#top-rated-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
