@@ -1,0 +1,183 @@
+body {
+    background-color: #8CAF9A;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+
+.input-container::placeholder{
+    color: black;
+}
+
+.login-container{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rakkas', cursive;
+}
+
+.login-container-vertical{
+    background: #634B41;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: white;
+    border-width: 5px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #C4C4C4;
+    margin: 30px;
+    height: 100px;
+    width: 700px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    color: #407B58;
+}
+
+
+::-webkit-input-placeholder{
+    color: black;
+}
+
+#login-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#username{
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+    height: 300px;
+    width: 350px;
+    margin: 5px;
+}
+#username:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#birthdate{
+    order: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+    height: 300px;
+    width: 350px;
+    margin: 5px;
+}
+#birthdate:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#email{
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+    height: 300px;
+    width: 350px;
+    margin: 5px;
+}
+
+#email:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#password{
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+    height: 300px;
+    width: 350px;
+    margin: 5px;
+}
+
+#password:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #407B58;
+    font-family: 'Rakkas', cursive;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 200px;
+    font-size: 150%;
+}
+
+#login-btn:focus{
+    outline: none !important;
+    border-color: #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+#signup-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #407B58;
+    font-family: 'Rakkas', cursive;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 200px;
+    font-size: 150%;
+}
+
+#signup-btn:focus{
+    outline: none !important;
+    border-color: #000000;
+    box-shadow: 0 0 10px #000000;
+}
