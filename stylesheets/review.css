@@ -1,0 +1,95 @@
+body {
+    background-color: #8CAF9A;
+}
+
+.header {
+    display: flex;
+    font-family: 'Rakkas', cursive;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.review-container{
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Rakkas', cursive;
+}
+
+.review-container-vertical{
+    background: #376047;
+    border-radius: 29px;
+
+}
+
+#review-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.input-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #C4C4C4;
+    margin: 40px;
+    width: 515px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 29px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 30px;
+}
+
+
+#submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #634B41;
+    font-family: 'Rakkas', cursive;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 200px;
+    font-size: 150%;
+}
+
+#submit-btn:focus{
+    outline: none !important;
+    border-color: #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+.moviedetails-container{
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Rakkas', cursive;
+}
+
+.moviedetails-container-vertical{
+    border-radius: 29px;
+
+}
+
+#moviedetails-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 200%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  
