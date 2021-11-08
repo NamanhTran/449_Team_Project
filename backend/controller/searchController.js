@@ -1,5 +1,6 @@
 const axios = require('axios');
 const config = require('config');
+const path = require('path');
 const Review = require('../model/reviewModel');
 
 const TheMovieDBInstance = axios.create({
@@ -54,16 +55,48 @@ exports.getTrending = async (req, res, next) => {
     }
 };
 
-exports.getTopRated = async (req, res, next) => {
-    // Query mongodb for top 5 highest rating by users
+exports.getUpcoming = async (req, res, next) => {
+    // Query the movieDB API for results
     try {
-        // Ehh
-        const result = await Review.find().sort('-rating').limit(1);
-        console.log(result);
-        res.status(200).send(result);
+        const { data } = await TheMovieDBInstance('/movie/upcoming', {
+            params: {
+                region: 'us'
+            }
+        });
+        
+        return res.status(200).send(data.results);
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({error: "Error in querying MongoDB for top movie reviews"});
+        return res.status(500).json({error: "Error in querying MovieDB for upcoming movies"});
     }
+};
+
+exports.getLatest = async (req, res, next) => {
+    // Query the movieDB API for results
+    try {
+        const { data } = await TheMovieDBInstance('/movie/now_playing', {
+            params: {
+                region: 'us'
+            }
+        });
+        
+        return res.status(200).send(data.results);
+
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({error: "Error in querying MovieDB for latest movies"});
+    }
+};
+
+exports.getMovieDetails = async (req, res, next) => {
+    // Extract movie title from path
+    let movieTitle = req.query.title;
+    console.log(movieTitle);
+    // Get movie reviews
+
+    // Get average ratings
+
+    // Get movie data (poster, description, and release date)
+    return res.sendFile(path.join('../public/pages/review.html'));
 };

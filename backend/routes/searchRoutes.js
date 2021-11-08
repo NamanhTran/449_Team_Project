@@ -8,6 +8,10 @@ router.get('/search', searchController.getSearch);
 
 router.get('/trending', searchController.getTrending);
 
-router.get('/top-rated', searchController.getTopRated);
+router.get('/upcoming', searchController.getUpcoming);
+
+router.get('/latest', searchController.getLatest);
+
+router.get('/movieDetails', searchController.getMovieDetails);
 
 module.exports = router;

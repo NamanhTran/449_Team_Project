@@ -12,6 +12,10 @@ exports.getReviews = async (req, res, next) => {
     }
 };
 
+exports.getCreateReview = async (req, res, next) => {
+    return res.send('test');
+};
+
 exports.postCreateReview = async (req, res, next) => {
     const { username, movieTitle, review, rating } = req.body;
     
