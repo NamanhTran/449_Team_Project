@@ -27,7 +27,7 @@
             <!--Nav Bar contents-->
             <ul id="slide-out" class="sidenav">
                 <li><div class="user-view">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./signup.html">Signup</a></li>
                 <li><a href="./search.html">Search</a></li>
@@ -38,10 +38,10 @@
         </div>
         <div id="flexTitleDescription">
                 <div>
-                    <a href="index.html"> <img id="headerImg" src="/assets/img/potatoheader.png"> </a>
+                    <a href="../index.html"> <img id="headerImg" src="/assets/img/potatoheader.png"> </a>
                 </div>
                 <div>
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <h1 id="headerTitle">Rotten Potatoes</h1>
                         <div id="headerDescription">
                             Movie & Show Ratings
@@ -56,15 +56,37 @@
     </div>
 
     <div class="search-bar-container">
-        <input id="search-input" type="text" placeholder="   Type a movie here to be searched" oninput="search(event)"/>
+        <input id="search-input" type="text" placeholder="   Type a movie title to be searched" oninput="search(event)"/>
     </div>
 
     <div class="result-container">
+        <div class="result-items">
+            <img class="movie-poster" id="poster1" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
+        </div>
 
+        <div class="result-items">
+            <img class="movie-poster" id="poster2" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
+        </div>
+
+        <div class="result-items">
+            <img class="movie-poster" id="poster3" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
+        </div>
+
+        <div class="result-items">
+            <img class="movie-poster" id="poster4" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
+        </div>
     </div>
 
     <div class="page-container">
-        
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/></svg>
+        </div>
+        <div>
+            Showing N of M matches
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg>
+        </div>
     </div>
 
   </body>
