@@ -22,6 +22,8 @@ window.onload = async function() {
 
     document.getElementById('upcoming-poster').src = 'https://image.tmdb.org/t/p/w300/' + upcomingMovieData[curIndexUpcomingMovies].poster_path;
     document.getElementById('upcoming-poster').dataset.title = upcomingMovieData[curIndexUpcomingMovies].title;
+
+    return;
 };
 
 const trendingLeft = function() {
@@ -34,6 +36,7 @@ const trendingLeft = function() {
     document.getElementById('trending-poster').src = 'https://image.tmdb.org/t/p/w300/' + trendingMovieData[curIndexTrendingMovies].poster_path;
     document.getElementById('trending-poster').dataset.title = trendingMovieData[curIndexTrendingMovies].title;
     console.log('trending left');
+    return;
 };
 
 const trendingRight = function() {
@@ -46,6 +49,7 @@ const trendingRight = function() {
     document.getElementById('trending-poster').src = 'https://image.tmdb.org/t/p/w300/' + trendingMovieData[curIndexTrendingMovies].poster_path;
     document.getElementById('trending-poster').dataset.title = trendingMovieData[curIndexTrendingMovies].title;
     console.log('trending right');
+    return;
 };
 
 const newLeft = function() {
@@ -58,6 +62,7 @@ const newLeft = function() {
     document.getElementById('new-poster').src = 'https://image.tmdb.org/t/p/w300/' + latestMovieData[curIndexNewMovies].poster_path;
     document.getElementById('new-poster').dataset.title = latestMovieData[curIndexNewMovies].title;
     console.log('new left');
+    return;
 };
 
 const newRight = function() {
@@ -70,6 +75,7 @@ const newRight = function() {
     document.getElementById('new-poster').src = 'https://image.tmdb.org/t/p/w300/' + latestMovieData[curIndexNewMovies].poster_path;
     document.getElementById('new-poster').dataset.title = latestMovieData[curIndexNewMovies].title;
     console.log('new right');
+    return;
 };
 
 const upcomingLeft = function() {
@@ -84,6 +90,7 @@ const upcomingLeft = function() {
     document.getElementById('upcoming-poster').src = 'https://image.tmdb.org/t/p/w300/' + upcomingMovieData[curIndexUpcomingMovies].poster_path;
     document.getElementById('upcoming-poster').dataset.title = upcomingMovieData[curIndexUpcomingMovies].title;
     console.log('upcoming left');
+    return;
 };
 
 const upcomingRight = function() {
@@ -98,9 +105,11 @@ const upcomingRight = function() {
     document.getElementById('upcoming-poster').src = 'https://image.tmdb.org/t/p/w300/' + upcomingMovieData[curIndexUpcomingMovies].poster_path;
     document.getElementById('upcoming-poster').dataset.title = upcomingMovieData[curIndexUpcomingMovies].title;
     console.log('upcoming right');
+    return;
 };
 
 const redirectMovieDetails = function(event) {
     const movieTitle = event.target.dataset.title;
     window.location.href = "http://localhost:3000/movieDetails?title=" + movieTitle;
+    return;
 }

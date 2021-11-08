@@ -71,18 +71,36 @@ body {
     background-color: #C4C4C4;
     font-family: 'Rakkas', cursive;
     border-radius: 4px;
-    height: 250px;
+    height: 300px;
     width: 350px;
-    margin: 10px;
+    margin: 5px;
 }
-
 #username:focus{
     outline: none !important;
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
 
-#password{
+#birthdate{
+    order: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+    height: 300px;
+    width: 350px;
+    margin: 5px;
+}
+#birthdate:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#email{
     order: 2;
     display: flex;
     justify-content: center;
@@ -91,9 +109,29 @@ body {
     background-color: #C4C4C4;
     font-family: 'Rakkas', cursive;
     border-radius: 4px;
-    height: 250px;
+    height: 300px;
     width: 350px;
-    margin: 10px;
+    margin: 5px;
+}
+
+#email:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#password{
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    font-family: 'Rakkas', cursive;
+    border-radius: 4px;
+    height: 300px;
+    width: 350px;
+    margin: 5px;
 }
 
 #password:focus{
@@ -107,7 +145,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 5px;
     background-color: #407B58;
     font-family: 'Rakkas', cursive;
     border-radius: 10px;
@@ -128,7 +166,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 5px;
     background-color: #407B58;
     font-family: 'Rakkas', cursive;
     border-radius: 10px;

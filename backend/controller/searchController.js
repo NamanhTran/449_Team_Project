@@ -91,12 +91,27 @@ exports.getLatest = async (req, res, next) => {
 
 exports.getMovieDetails = async (req, res, next) => {
     // Extract movie title from path
-    let movieTitle = req.query.title;
+    const movieTitle = req.query.title;
+    
     console.log(movieTitle);
+
     // Get movie reviews
+    const reviews = await Review.find().where('movieTitle').equals(movieTitle);
 
     // Get average ratings
+    const average = await Review.aggregate(
+        [
+            {$match: {"movieTitle": movieTitle} },
+            {$group: {_id: "$movieTitle", average: {$avg: "$rating"}}}
+        ]
+    );
+
+    console.log(average);
 
     // Get movie data (poster, description, and release date)
-    return res.sendFile(path.join('../public/pages/review.html'));
+    const { data } = await searchMovie(movieTitle);
+
+    const movieData = data.results[0];
+
+    return res.sendFile(path.join(__dirname, '../', 'public', 'pages', 'review.html'));
 };

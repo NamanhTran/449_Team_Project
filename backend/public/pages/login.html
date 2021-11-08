@@ -61,12 +61,13 @@
                 <h2 id="login-header">Welcome Back!</h2>
             </div>
             <div class="input-container">
-                <input id="email" type="text" placeholder="  email">
-                <input id="password" type="text" placeholder="  password">
+                <span class="helper-text" id="login-error" data-error="wrong"></span>
+                <input id="username" type="text" placeholder="  username" required>
+                <input id="password" type="password" placeholder="  password" required>
             </div>
             <div class="btn-container">
-                <button id="login-btn">Log In</button>
-                <button id="signup-btn">Sign Up</button>
+                <button id="login-btn" onclick="login()">Log In</button>
+                <button id="signup-btn" onclick="redirectSignUp()">Sign Up</button>
             </div>
         </div>
     </div>
@@ -76,6 +77,8 @@
     <div class=""></div>
     <div class=""></div>
   </body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="/scripts/navbar.js"></script>
+      <script src="/scripts/login.js"></script>
 </html>
 

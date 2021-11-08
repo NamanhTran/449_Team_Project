@@ -18,6 +18,8 @@ const corsOptions = {
     credential: true
 };
 
+app.set('view engine', 'ejs');
+
 app.use(cors(corsOptions));
 
 app.use(express.static(__dirname));
