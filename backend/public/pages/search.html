@@ -6,9 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/pages/login.html">
     <link rel="stylesheet" href="/stylesheets/index.css">
-    <link rel="stylesheet" href="/stylesheets/signup.css">
+    <link rel="stylesheet" href="/stylesheets/search.css">
 
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
@@ -28,7 +27,7 @@
             <!--Nav Bar contents-->
             <ul id="slide-out" class="sidenav">
                 <li><div class="user-view">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./signup.html">Signup</a></li>
                 <li><a href="./search.html">Search</a></li>
@@ -39,10 +38,10 @@
         </div>
         <div id="flexTitleDescription">
                 <div>
-                    <a href="../index.html"> <img id="headerImg" src="/assets/img/potatoheader.png"> </a>
+                    <a href="index.html"> <img id="headerImg" src="/assets/img/potatoheader.png"> </a>
                 </div>
                 <div>
-                    <a href="../index.html">
+                    <a href="./index.html">
                         <h1 id="headerTitle">Rotten Potatoes</h1>
                         <div id="headerDescription">
                             Movie & Show Ratings
@@ -56,34 +55,21 @@
         </div>
     </div>
 
-    <div class="login-container">
-        <div class="login-container-vertical">
-            <div>
-                <h2 id="login-header">Create Your Account!</h2>
-            </div>
-            <div class="input-container">
-                <span class="helper-text" id="sign-up-error" data-error="wrong"></span>
-                <input id="username" type="text" placeholder="  Username" required>
-                <input id="email" type="text" placeholder="  Email" required>
-                <input id="password" type="password" placeholder="  Password" required>
-                <input id="birthdate" type="text" placeholder="  Birthdate(MM/DD/YYYY)">
-                <span class="checkmark">
-                    <div class="checkmark_stem"></div>
-                    <div class="checkmark_kick"></div>
-                </span>
-            </div>
-            <div class="btn-container">
-                <button id="signup-btn" onclick="signup()">Sign Up</button>
-            </div>
-        </div>
+    <div class="search-bar-container">
+        <input id="search-input" type="text" placeholder="   Type a movie here to be searched" oninput="search(event)"/>
     </div>
 
+    <div class="result-container">
 
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
+    </div>
+
+    <div class="page-container">
+        
+    </div>
+
   </body>
-      <script src="/scripts/navbar.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="/scripts/signup.js"></script>
+    <script src="/scripts/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/scripts/search.js"></script>
 </html>
+
