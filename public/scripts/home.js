@@ -1,10 +1,10 @@
+const SERVER_URL = "http://localhost:3000";
 let curIndexUpcomingMovies = 0;
 let curIndexTrendingMovies = 0;
 let curIndexNewMovies = 0;
 let trendingMovieData = upcomingMovieData = latestMovieData = null;
 
 window.onload = async function() {
-    const SERVER_URL = "http://localhost:3000";
 
     trendingMovieData = (await axios.get(SERVER_URL + '/trending')).data;
 

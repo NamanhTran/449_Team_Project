@@ -1,3 +1,5 @@
+const SERVER_URL = "http://localhost:3000";
+
 const signup = async function () {
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
@@ -9,11 +11,11 @@ const signup = async function () {
     }
 
     try {
-        const response = await axios.post('http://localhost:3000/signup', {'username': username, 'email': email, 'password': password});
+        const response = await axios.post(SERVER_URL + '/signup', {'username': username, 'email': email, 'password': password});
 
         if (response.status == 200) {
             // Set cookie then send back to main page
-            window.location.href = "http://localhost:3000/";
+            window.location.href = SERVER_URL + "/";
             return;
         }
     } catch (error) {

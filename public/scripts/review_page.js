@@ -1,3 +1,5 @@
+const SERVER_URL = "http://localhost:3000";
+
 const createreview = async function() {
     const username = document.getElementById('username-input').value;
     const movieTitle = document.getElementById('movie-title').innerText;
@@ -7,10 +9,10 @@ const createreview = async function() {
     console.log('username:', username,'\nmovieTitle:', movieTitle,'\nreview:', review, '\nuserRating:', userRating);
 
     try {
-        const result = await axios.post('http://localhost:3000/createreview', {'username': username, 'movieTitle': movieTitle, 'review': review, 'rating': rating});
+        const result = await axios.post(SERVER_URL + '/createreview', {'username': username, 'movieTitle': movieTitle, 'review': review, 'rating': rating});
         console.log(result);
         if (result.status == 200) { 
-            window.location.href = "http://localhost:3000/movieDetails?title=" + movieTitle;
+            window.location.href = SERVER_URL + "/movieDetails?title=" + movieTitle;
             return;
         }
 

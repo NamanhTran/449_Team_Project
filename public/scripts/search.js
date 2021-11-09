@@ -3,17 +3,14 @@ let movieDataIndex = 0;
 let currentPage = 0;
 let maxPage = 0;
 let delayTimer;
-
-window.onload = async function () {
-
-};
+const SERVER_URL = "http://localhost:3000";
 
 const search = async function () {
     clearTimeout(delayTimer);
     delayTimer = await setTimeout(async function () {
         const query = document.getElementById('search-input').value;
         console.log(query);
-        const { data } = await axios.post('http://localhost:3000/search', {'query': query});
+        const { data } = await axios.post(SERVER_URL + '/search', {'query': query});
         
         console.log(data);
 
@@ -95,7 +92,7 @@ updateMovieSearchDOM = function (direction) {
 
 const redirectMovieDetails =  function(event) {
     const movieTitle = event.target.dataset.title;
-    window.location.href = "http://localhost:3000/movieDetails?title=" + movieTitle;
+    window.location.href = SERVER_URL + "/movieDetails?title=" + movieTitle;
     return;
 };
 
