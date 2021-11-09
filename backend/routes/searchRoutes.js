@@ -4,7 +4,7 @@ const searchController = require('../controller/searchController');
 
 const router = express.Router();
 
-router.get('/search', searchController.getSearch);
+router.post('/search', searchController.postSearch);
 
 router.get('/trending', searchController.getTrending);
 

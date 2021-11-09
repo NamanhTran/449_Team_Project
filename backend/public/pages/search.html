@@ -59,32 +59,16 @@
         <input id="search-input" type="text" placeholder="   Type a movie title to be searched" oninput="search(event)"/>
     </div>
 
-    <div class="result-container">
-        <div class="result-items">
-            <img class="movie-poster" id="poster1" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
-        </div>
-
-        <div class="result-items">
-            <img class="movie-poster" id="poster2" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
-        </div>
-
-        <div class="result-items">
-            <img class="movie-poster" id="poster3" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
-        </div>
-
-        <div class="result-items">
-            <img class="movie-poster" id="poster4" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle" onclick="redirectMovieDetails(event)">
-        </div>
+    <div class="result-container" id="result-container">
     </div>
 
     <div class="page-container">
-        <div>
+        <div onclick="updateMovieSearchDOM('left')">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/></svg>
         </div>
-        <div>
-            Showing N of M matches
+        <div id="page-info">
         </div>
-        <div>
+        <div onclick="updateMovieSearchDOM('right')">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg>
         </div>
     </div>

@@ -27,9 +27,10 @@ const searchMovie = async (query) => {
     return response;
 };
 
-exports.getSearch = async (req, res, next) => {
+exports.postSearch = async (req, res, next) => {
     // Check if query fields exists
     const { query } = req.body;
+    console.log(query);
 
     // Query the movieDB API for results
     try {
