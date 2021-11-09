@@ -1,4 +1,5 @@
 const Review = require('../model/reviewModel');
+const path = require('path');
 
 exports.getReviews = async (req, res, next) => {
     const { movieTitle } = req.body;
@@ -13,7 +14,9 @@ exports.getReviews = async (req, res, next) => {
 };
 
 exports.getCreateReview = async (req, res, next) => {
-    return res.send('test');
+    const movieTitle = req.query.title;
+
+    return res.render(path.join(__dirname, '../', 'public', 'pages', 'review.ejs'), {movieTitle: movieTitle});
 };
 
 exports.postCreateReview = async (req, res, next) => {

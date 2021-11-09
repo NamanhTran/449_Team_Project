@@ -19,6 +19,8 @@ const corsOptions = {
 };
 
 app.set('view engine', 'ejs');
+//app.set('views', __dirname + '/public/pages');
+app.engine('html', require('ejs').renderFile);
 
 app.use(cors(corsOptions));
 

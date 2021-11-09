@@ -50,6 +50,7 @@
 #overall-rating {
     display: flex;
     padding: 10px;
+    font-size: 40px;
 }
 
 .movie-info-review-container {

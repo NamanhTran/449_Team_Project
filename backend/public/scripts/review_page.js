@@ -9,9 +9,8 @@ const createreview = async function() {
     try {
         const result = await axios.post('http://localhost:3000/createreview', {'username': username, 'movieTitle': movieTitle, 'review': review, 'rating': rating});
         console.log(result);
-        if (result.status == 200) {
-            // Set cookie then send back to main page
-            window.location.href = "http://localhost:3000/";
+        if (result.status == 200) { 
+            window.location.href = "http://localhost:3000/movieDetails?title=" + movieTitle;
             return;
         }
 

@@ -100,7 +100,7 @@ exports.getMovieDetails = async (req, res, next) => {
     const reviews = await Review.find().where('movieTitle').equals(movieTitle);
 
     // Get average ratings
-    const average = await Review.aggregate(
+    let average = await Review.aggregate(
         [
             {$match: {"movieTitle": movieTitle} },
             {$group: {_id: "$movieTitle", average: {$avg: "$rating"}}}
@@ -109,10 +109,25 @@ exports.getMovieDetails = async (req, res, next) => {
 
     console.log(average);
 
+    if (average.length === 0) {
+        average = '?'
+    } else {
+        average = average[0].average.toFixed(2);
+    }
+
     // Get movie data (poster, description, and release date)
     const { data } = await searchMovie(movieTitle);
 
     const movieData = data.results[0];
 
-    return res.sendFile(path.join(__dirname, '../', 'public', 'pages', 'review.html'));
+    console.log(reviews);
+
+    return res.render(path.join(__dirname, '../', 'public', 'pages', 'movie-details.ejs'), {
+        movieTitle: movieData.title,
+        description: movieData.overview,
+        releaseDate: movieData.release_date,
+        posterURL: 'https://image.tmdb.org/t/p/w300/' + movieData.poster_path,
+        reviews: reviews,
+        average: average
+    });
 };

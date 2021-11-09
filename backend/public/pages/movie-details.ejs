@@ -51,24 +51,21 @@
                 </div>
             </a>
         </div>
-        <div>
-            <input id="searchBar" type="text" placeholder="  Search">
-        </div>
     </div>
 
     <div class="movie-detail-container">
         <div id="movie-title">
-            SHANG-CHI AND THE LEGEND OF THE TEN RINGS
+            <%= movieTitle %>
         </div>
         <div class="info-container">
             <div class="movie-poster-rating-container">
                 <div class="movie-poster-container">
-                    <img id="movie-poster" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle">
+                    <img id="movie-poster" src=<%= posterURL %> data-title="movieTitle">
                 </div>
 
                 <div class="ratings-container">
                     <div id="overall-rating"> 
-                        N out of 5
+                        <%= average %> out of 5
                         <img id="potato-img-rating" src="../assets/img/potatorating.png">
                     </div>
                 </div>
@@ -76,34 +73,27 @@
             <div class="movie-info-review-container">
                 <div class="details-container">
                     <div id="description">
-                        Description:
+                        Description: <%= description %>
                     </div>
                     <div id="release-date">
-                        Release Date:
+                        Release Date: <%= releaseDate %>
                     </div>
                 </div>
                 <div class="reviews-container">
-                    <div class="review">
-                        <div class="rating">
-                            Rating: 5/5
+                    <% reviews.forEach(function (review) { %>
+                        <div class="review">
+                            <div class="rating">
+                                Rating: <%= review.rating %>/5
+                            </div>
+                            <div class="review-post">
+                                <%= review.review %>
+                            </div>
+                            <div class="user">- <%= review.username %></div>
                         </div>
-                        <div class="review-post">
-                            Dummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy Data
-                        </div>
-                        <div class="user">- Namanh</div>
-                    </div>
-                    <div class="review">
-                        <div class="rating">
-                            Rating: 2/5
-                        </div>
-                        <div class="review-post">
-                            Dummy Data
-                        </div>
-                        <div class="user">- Tuanah</div>
-                    </div>
+                    <% }); %>
                 </div>
                 <div id="review-button-container">
-                    <button id="review-button">Post a Review!</button>
+                    <button id="review-button" onclick="redirectReviewPage()">Post a Review!</button>
                 </div>
             </div>
         </div>
@@ -112,5 +102,5 @@
   </body>
   <script src="/scripts/navbar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="/scripts/search.js"></script>
+  <script src="/scripts/movie-details.js"></script>
   </html>
