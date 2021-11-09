@@ -1,0 +1,138 @@
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rakkas', normal;
+    row-gap: 50px;
+    padding-left: 2%;
+}
+
+#movie-title {
+    display: flex;
+    font-size: 45px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.movie-poster-rating-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.movie-poster-container {
+    display: flex;
+}
+
+#movie-poster {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.22);
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    font-size: 48px;
+    color:#FFFFFF;
+    justify-content: center;
+}
+
+#overall-rating {
+    display: flex;
+    padding: 10px;
+}
+
+.movie-info-review-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    flex-grow: 2;
+    padding-right: 2%;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    font-size: 22px;
+    padding-left: 10px;
+    font-family: 'Work Sans', normal;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    background: #376047;
+    border-radius: 29px;
+    color:  #FFFFFF;
+    font-size: 48px;
+    height: auto;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.review-button-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+#review-button {
+    background: #634B41;
+    font-family: 'Rakkas', normal;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #FFFFFF;
+    justify-content: center;
+    width: 296px;
+    height: 67px;
+    font-size: 36px;
+    align-items: flex-end;
+}
+
+#potato-img-rating {
+    display: flex;
+    width: 63px;
+    height: 88px;
+    align-self: flex-end;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.review-post {
+    font-family: 'Work Sans', normal;
+    display: flex;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+.user {
+    font-family: 'Work Sans', normal;
+    display: flex;
+    padding-right: 25px;
+    font-size: 25px;
+}
+
+.rating {
+    display: flex;
+    font-size: 25px;
+}

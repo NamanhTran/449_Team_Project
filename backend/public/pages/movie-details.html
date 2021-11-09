@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/movie-details.css">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Local Scripts-->
+    <script src="/scripts/navbar.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    
+    <div class="header">
+        <div id="sidenav">
+            <!--Nav Bar contents-->
+            <ul id="slide-out" class="sidenav">
+                <li><div class="user-view">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+                <li><a href="./search.html">Search</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><svg xmlns="http://www.w3.org/2000/svg" height="47px" justify-content="center"; viewBox="0 0 24 24" width="47px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a>
+            
+            <!--End of Nav Bar contents-->
+        </div>
+        <div id="flexTitleDescription">
+                <div>
+                    <a href="../index.html"> <img id="headerImg" src="/assets/img/potatoheader.png"> </a>
+                </div>
+                <div>
+                    <a href="../index.html">
+                        <h1 id="headerTitle">Rotten Potatoes</h1>
+                        <div id="headerDescription">
+                            Movie & Show Ratings
+                        </div>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <div>
+            <input id="searchBar" type="text" placeholder="  Search">
+        </div>
+    </div>
+
+    <div class="movie-detail-container">
+        <div id="movie-title">
+            SHANG-CHI AND THE LEGEND OF THE TEN RINGS
+        </div>
+        <div class="info-container">
+            <div class="movie-poster-rating-container">
+                <div class="movie-poster-container">
+                    <img id="movie-poster" src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" data-title="movieTitle">
+                </div>
+
+                <div class="ratings-container">
+                    <div id="overall-rating"> 
+                        N out of 5
+                        <img id="potato-img-rating" src="../assets/img/potatorating.png">
+                    </div>
+                </div>
+            </div>
+            <div class="movie-info-review-container">
+                <div class="details-container">
+                    <div id="description">
+                        Description:
+                    </div>
+                    <div id="release-date">
+                        Release Date:
+                    </div>
+                </div>
+                <div class="reviews-container">
+                    <div class="review">
+                        <div class="rating">
+                            Rating: 5/5
+                        </div>
+                        <div class="review-post">
+                            Dummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy DataDummy Data
+                        </div>
+                        <div class="user">- Namanh</div>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            Rating: 2/5
+                        </div>
+                        <div class="review-post">
+                            Dummy Data
+                        </div>
+                        <div class="user">- Tuanah</div>
+                    </div>
+                </div>
+                <div id="review-button-container">
+                    <button id="review-button">Post a Review!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+  <script src="/scripts/navbar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/scripts/search.js"></script>
+  </html>
