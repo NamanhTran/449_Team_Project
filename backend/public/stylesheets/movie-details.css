@@ -136,3 +136,11 @@
     display: flex;
     font-size: 25px;
 }
+
+.description {
+    padding: 10px;
+}
+
+.release-date {
+    padding: 10px;
+}
