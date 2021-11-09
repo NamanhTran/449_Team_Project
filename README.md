@@ -2,6 +2,8 @@
 
 A movie site where users can search movies and leave reviews!
 
+Currently hosted at http://35.235.100.66:3000/
+
 ## Getting Started
 
 These instructions will give you a copy of the project up and running on
