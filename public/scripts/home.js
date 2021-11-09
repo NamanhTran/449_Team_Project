@@ -113,6 +113,6 @@ const upcomingRight = function() {
 
 const redirectMovieDetails = function(event) {
     const movieTitle = event.target.dataset.title;
-    window.location.href = "http://localhost:3000/movieDetails?title=" + movieTitle;
+    window.location.href = SERVER_URL + "/movieDetails?title=" + movieTitle;
     return;
 }
