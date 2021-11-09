@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../stylesheets/review.css">
 
     <!--Import materialize.css-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -19,6 +20,9 @@
     <!--Local Scripts-->
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/star.js"></script>
+    <script src="/backend/public/scripts/review_page.js"></script>
+
+
 
 
     <!--Let browser know website is optimized for mobile-->
@@ -59,7 +63,7 @@
         </div>
     </div>
 
-    <h1 class="movie-title">[Movie Name]</h1>
+    <h1 class="movie-title" id="movie-title">Shang Chi</h1>
     <div class="review-container">
         <input id="username-input" type="text" placeholder="   Enter Username">
         <div class="input-container">
@@ -73,7 +77,7 @@
             <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
             <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
         </div>
-        <button id="submit-btn">Submit!</button>
+        <button id="submit-btn" onclick="createreview()">Submit!</button>
     </div>
 
     <div class=""></div>
