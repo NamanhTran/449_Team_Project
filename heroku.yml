@@ -1,0 +1,5 @@
+build:
+  docker:
+    rotten_potatoes: Dockerfile
+  run:
+    rotten_potatoes: npm start
