@@ -1,10 +1,13 @@
-const SERVER_URL = "http://localhost:3000";
-
 const createreview = async function() {
     const username = document.getElementById('username-input').value;
     const movieTitle = document.getElementById('movie-title').innerText;
     const review = document.getElementById('review').value;
     const rating = userRating;
+
+    if (!username || !review || !rating) {
+        document.getElementById('review-error').innerText = "Please Fill All Fields";
+        return;
+    } 
 
     console.log('username:', username,'\nmovieTitle:', movieTitle,'\nreview:', review, '\nuserRating:', userRating);
 

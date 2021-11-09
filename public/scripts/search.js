@@ -3,7 +3,6 @@ let movieDataIndex = 0;
 let currentPage = 0;
 let maxPage = 0;
 let delayTimer;
-const SERVER_URL = "http://localhost:3000";
 
 const search = async function () {
     clearTimeout(delayTimer);

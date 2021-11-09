@@ -34,9 +34,9 @@
             <ul id="slide-out" class="sidenav">
                 <li><div class="user-view">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./signup.html">Signup</a></li>
-                <li><a href="./search.html">Search</a></li>
+                <li><a onclick="redirectLogin()">Login</a></li>
+                <li><a onclick="redirectSignUp()">Signup</a></li>
+                <li><a onclick="redirectSearch()">Search</a></li>
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><svg xmlns="http://www.w3.org/2000/svg" height="47px" justify-content="center"; viewBox="0 0 24 24" width="47px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a>
             
@@ -72,6 +72,7 @@
             <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
             <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
         </div>
+        <span class="helper-text" id="review-error" data-error="wrong"></span>
         <button id="submit-btn" onclick="createreview()">Submit!</button>
     </div>
 
@@ -79,5 +80,4 @@
     <div class=""></div>
     <div class=""></div>
   </body>
-      <script src="/scripts/navbar.js"></script>
 </html>

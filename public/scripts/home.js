@@ -1,4 +1,3 @@
-const SERVER_URL = "http://localhost:3000";
 let curIndexUpcomingMovies = 0;
 let curIndexTrendingMovies = 0;
 let curIndexNewMovies = 0;

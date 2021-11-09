@@ -1,5 +1,3 @@
-const SERVER_URL = "http://localhost:3000";
-
 const signup = async function () {
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;

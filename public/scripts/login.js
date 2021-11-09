@@ -1,5 +1,3 @@
-const SERVER_URL = "http://localhost:3000";
-
 const login = async function() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -23,8 +21,4 @@ const login = async function() {
             return;
         }
     }
-};
-
-const redirectSignUp = function() {
-    window.location.href = SERVER_URL + "/pages/signup.html";
 };
