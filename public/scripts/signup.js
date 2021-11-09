@@ -1,3 +1,5 @@
+'use strict'
+
 const signup = async function () {
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;

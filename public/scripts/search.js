@@ -1,3 +1,5 @@
+'use strict'
+
 let movieData = null;
 let movieDataIndex = 0;
 let currentPage = 0;
@@ -9,6 +11,16 @@ const search = async function () {
     delayTimer = await setTimeout(async function () {
         const query = document.getElementById('search-input').value;
         console.log(query);
+        if (query === "") {
+            movieData = null;
+            movieDataIndex = 0;
+            currentPage = 0;
+            maxPage = 0;
+            const parentElem = document.getElementById('result-container');
+            removeAllChildNodes(parentElem);
+            updatePageDOM('reset');
+            return;
+        }
         const { data } = await axios.post(SERVER_URL + '/search', {'query': query});
         
         console.log(data);
@@ -19,7 +31,7 @@ const search = async function () {
     },1000);
 };
 
-updateMovieSearchDOM = function (direction) {
+const updateMovieSearchDOM = function (direction) {
     if (direction === 'left' && currentPage === 1) {
         return;
     }
@@ -130,11 +142,23 @@ const updatePageDOM = function (condition) {
     }
 
     else if (condition == 'left') {
+        if (currentPage == 0) {
+            return;
+        }
         currentPage -= 1;
     }
 
     else if (condition == 'right') {
+        if (currentPage == maxPage) {
+            return;
+        }
         currentPage += 1;
+    }
+
+    else if (condition == 'reset') {
+        const currentPageNode = document.getElementById('page-info');
+        currentPageNode.innerText = "";
+        return;
     }
     const currentPageNode = document.getElementById('page-info');
     currentPageNode.innerText = "Page " + String(currentPage) + " of " + String(maxPage);

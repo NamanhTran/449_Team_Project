@@ -1,3 +1,5 @@
+'use strict'
+
 var userRating = 0
 
 $(document).ready(function(){

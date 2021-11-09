@@ -1,7 +1,11 @@
+'use strict'
+
 let curIndexUpcomingMovies = 0;
 let curIndexTrendingMovies = 0;
 let curIndexNewMovies = 0;
-let trendingMovieData = upcomingMovieData = latestMovieData = null;
+let trendingMovieData = 0;
+let upcomingMovieData = 0;
+let latestMovieData = 0;
 
 window.onload = async function() {
 

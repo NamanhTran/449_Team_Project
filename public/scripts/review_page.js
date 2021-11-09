@@ -1,3 +1,5 @@
+'use strict'
+
 const createreview = async function() {
     const username = document.getElementById('username-input').value;
     const movieTitle = document.getElementById('movie-title').innerText;

@@ -43,13 +43,14 @@ body {
     background-color: #63836F;
     border-radius: 15px;
     width: 30%;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 #review{
     height: 95%;
     width: 95%;
     word-wrap: normal;
+    color: #FFFFFF;
 }
 
 .input-container{

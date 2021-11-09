@@ -1,3 +1,5 @@
+'use strict'
+
 const SERVER_URL = "http://localhost:3000";
 
 document.addEventListener('DOMContentLoaded', function() {

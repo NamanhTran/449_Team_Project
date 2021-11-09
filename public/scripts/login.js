@@ -1,3 +1,5 @@
+'use strict'
+
 const login = async function() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
