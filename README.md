@@ -29,11 +29,11 @@ Build the docker containers with docker compose.
 
 Go to https://localhost:3000 to view the application.
 
-To stop the container run this command in the root directory 
+To stop the containers run this command in the root directory 
 
     docker compose down
 
-If you want to run the application again after building it run this command:
+If you want to run the application again after building the containers with the ```--build``` flag run this command:
 
     docker compose up -d
 
